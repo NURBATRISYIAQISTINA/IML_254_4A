@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Struggle</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            min-height: 100vh; /* Ensure full screen height */
+        }
+        h1 {
+            background-color: #2F4F4F;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .frame {
+            position: relative;
+            margin: 20px;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px; /* Adds depth to 3D elements */
+        }
+        .frame:hover .flipper {
+            transform: rotateY(180deg); /* Flips the card on hover */
+        }
+        .flipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back of the card */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 5px solid white;
+            border-radius: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .back {
+            transform: rotateY(180deg); /* Initially hidden back side */
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 6px;
+        }
+        footer {
+            background-color: #2F4F4F;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            position: relative; /* Set footer to relative position */
+        }
+        /* CSS untuk mengatur jarak antara konten dan footer */
+        main {
+            flex: 1; /* Menggunakan sisa tinggi halaman */
+            padding-bottom: 60px; /* Tinggi footer + sedikit jarak */
+        }
+
+        header {
+            background-color: #2F4F4F;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            width: 100%; /* Full width */
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 30px 0;
+            width: 100%; /* Full width */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+        }
+
+        main {
+            width: 100%; /* Full width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px; /* Space between nav and content */
+        }
+
+        #top-link {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2F4F4F;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        #top-link img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #top-link a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>MY STRUGGLE</h1>
+</header> 
+
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="myself.html">MYSELF</a></li>
+        <li><a class="active" href="education.html">EDUCATION</a></li>
+        <li><a href="active.html">ACTIVE</a></li>
+        <li><a href="mylistener.html">MY LISTENER</a></li>
+        <li><a href="bestfriends.html">BESTFRIENDS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<main>
+    <center>
+        <audio controls>
+            <source src="resource/music/graduation nct.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </center>
+    <div class="container">
+        <div class="frame">
+            <div class="flipper">
+                <div class="front">
+                    <img src="resource/image/sk slim river.png" alt="SEKOLAH KEBANGSAAN SLIM RIVER">
+                </div>
+                <div class="back">
+                    <p>SEKOLAH KEBANGSAAN SLIM RIVER</p>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="flipper">
+                <div class="front">
+                    <img src="resource/image/taayah.jpeg" alt="SEKOLAH RAJA PEREMPUAN TAAYAH">
+                </div>
+                <div class="back">
+                    <p>SEKOLAH RAJA PEREMPUAN TAAYAH</p>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="flipper">
+                <div class="front">
+                    <img src="resource/image/uitm.png" alt="UITM KEDAH">
+                </div>
+                <div class="back">
+                    <p>UiTM KEDAH</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="top-link">
+        <a href="#top"><img src="resource/image/anakpanah.jpg" alt="TOP"></a>
+    </div>
+    <p>&copy; 2024 Nurbatrisyia Qistina. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+

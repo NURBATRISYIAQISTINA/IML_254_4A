@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/style.css">
+    <title>Contact</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Vz1jzIc3c4Klk23QG1QnjsRV+KWk8YrzQnbX2+RPLw5Q1SKV7A0VUHlWqDUTNZ+yl1Z1BIsr2i9I6tIMV1hxJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+         h1 {
+            background-color: #2F4F4F;
+            text-align: center;
+            padding: 5px;
+
+        }
+        .contact-form {
+            max-width: 600px; /* Membuat kotak tidak terlalu lebar */
+            margin: 20px auto;
+            padding: 30px; /* Memberi ruang di dalam kotak */
+            background-color: #333;
+            border-radius: 20px; /* Mengurangi radius agar lebih kotak */
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: calc(100% - 180px); /* Menyesuaikan lebar input */
+            padding: 90px;
+            font-size: 16px; /* Menambah ukuran font */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+        }
+        .form-group textarea {
+            height: 50px; /* Mengurangi tinggi textarea */
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: calc(100% - 20px); /* Menyesuaikan lebar input */
+            padding: 10px;
+            font-size: 16px; /* Menambah ukuran font */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+        }
+        .contact-button {
+            display: block;
+            width: 100%;
+            padding: 15px 20px; /* Menambah padding untuk tombol */
+            text-align: center;
+            background-color: #2F4F4F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px; /* Menambah ukuran font tombol */
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 10px; /* Memberi ruang di bawah tombol */
+        }
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px; /* Menambahkan ruang atas */
+        }
+        .social-icons img {
+            width: 40px; /* Ukuran gambar ikon sosial media */
+            height: 40px;
+            margin-right: 10px; /* Jarak antara gambar dan teks */
+            vertical-align: middle; /* Memastikan gambar dan teks berada di tengah vertikal */
+            border-radius: 5px; /* Mengatur sudut border untuk ikon */
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #bc2a8d; /* Warna khusus untuk Instagram */
+            font-size: 20px; /* Ukuran teks untuk sosial media */
+            vertical-align: middle; /* Memastikan gambar dan teks berada di tengah vertikal */
+        }
+
+        footer {
+            background-color: #2F4F4F;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px; /* Menambahkan ruang atas */
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>CONTACT</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="myself.html">MYSELF</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="active.html">ACTIVE</a></li>
+        <li><a href="mylistener.html">MY LISTENER</a></li>
+        <li><a href="bestfriends.html">BESTFRIENDS</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div class="contact-form">
+    <form action="mailto:sysya.qstn9@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="contact-button">SUBMIT</button>
+        <div class="social-icons">
+            <a href="https://wa.me/60193329349" target="_blank" rel="noopener noreferrer">
+                <img src="resource/image/wasap.png" alt="WhatsApp Icon">
+            </a>
+            <a href="https://www.instagram.com/sysyaqstnn._/" target="_blank" rel="noopener noreferrer">
+                <img src="resource/image/instagram.png" alt="Instagram Icon">
+            </a>
+        </div>
+    </form>
+</div>
+
+ <footer>
+        <div id="top-link">
+            <a href="#top"><img src="resource/image/anakpanah.jpg" alt="TOP"></a>
+        </div>
+        <p>&copy; 2024 Nurbatrisyia Qistina. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
